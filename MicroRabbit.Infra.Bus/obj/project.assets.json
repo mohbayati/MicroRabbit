@@ -193,26 +193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\0083855165\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\mohamad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
+      "projectUniqueName": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
       "projectName": "MicroRabbit.Infra.Bus",
-      "projectPath": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
-      "packagesPath": "C:\\Users\\0083855165\\.nuget\\packages\\",
-      "outputPath": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\obj\\",
+      "projectPath": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
+      "packagesPath": "C:\\Users\\mohamad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\0083855165\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mohamad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -226,8 +219,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj": {
-              "projectPath": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj"
+            "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj"
             }
           }
         }
@@ -270,7 +263,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

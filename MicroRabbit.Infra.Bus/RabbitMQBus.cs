@@ -87,24 +87,41 @@ namespace MicroRabbit.Infra.Bus
                 var consumer = new EventingBasicConsumer(channel);
 
 
-                consumer.Received += Consumer_Received;
+                consumer.Received  += Consumer_Received; ;
                 channel.BasicConsume(eventName, true, consumer);
             }
         }
 
-        private async Task Consumer_Received(object sender, BasicDeliverEventArgs e)
+
+        private void Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
             var eventName = e.RoutingKey;
             var massage = Encoding.UTF8.GetString(e.Body.ToArray());
             try
             {
-                await ProcessEvent(eventName, massage).ConfigureAwait(false);
+                ProcessEvent(eventName, massage).ConfigureAwait(false);
 
             }
             catch (Exception ex)
             {
 
-                throw;
+            }
+        }
+
+        private async Task ProcessEvent(string eventName, string massage)
+        {
+            if(_handlers.ContainsKey(eventName))
+            {
+                var subscriptins = _handlers[eventName];
+                foreach (var subscription in subscriptins)
+                {
+                    var handler = Activator.CreateInstance(subscription);
+                    if (handler == null) continue;
+                    var eventType = _eventType.SingleOrDefault(t => t.Name == eventName);
+                    var @event = JsonConvert.DeserializeObject(massage, eventType);
+                    var concriteType = typeof(IEventHandler<>).MakeGenericType(eventType);
+                    await (Task)concriteType.GetMethod("Handle").Invoke(handler, new object[] { @event });
+                }
             }
         }
     }
