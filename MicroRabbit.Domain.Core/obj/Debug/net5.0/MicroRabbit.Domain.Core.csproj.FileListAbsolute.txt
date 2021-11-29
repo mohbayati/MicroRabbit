@@ -2,7 +2,6 @@ F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\bin\Debug\net5.0
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\bin\Debug\net5.0\MicroRabbit.Domain.Core.dll
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\bin\Debug\net5.0\ref\MicroRabbit.Domain.Core.dll
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\bin\Debug\net5.0\MicroRabbit.Domain.Core.pdb
-F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.csprojAssemblyReference.cache
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.AssemblyInfoInputs.cache
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.AssemblyInfo.cs
@@ -10,3 +9,4 @@ F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.dll
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\ref\MicroRabbit.Domain.Core.dll
 F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.pdb
+F:\Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Domain.Core\obj\Debug\net5.0\MicroRabbit.Domain.Core.csprojAssemblyReference.cache

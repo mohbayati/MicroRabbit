@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+IZHQlrMR7T3GhHau/WeREuMa8Wvlt1A96o9h9TKPEajvB7eCWkRf09kKvYAf6CDfneiEOuwQYQBQtU6PLlXUg==",
+  "dgSpecHash": "6MP1pWm2H6P7O68d9aXC0Vn1UoGymWUq2H8kzzFaCxqOKb7ut1lpPq5Sdlp8DGH/1FMlMgUmityPrbTkQf0yiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj",
+  "projectFilePath": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Domain.Core\\MicroRabbit.Domain.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mohamad\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+    "C:\\Users\\0083855165\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
