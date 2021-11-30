@@ -51,7 +51,7 @@ namespace MicroRabbit.Infra.Bus
             where T : Event
             where TH : IEventHandler<T>
         {
-            var eventName = typeof(T).GetType().Name;
+            var eventName = typeof(T).Name;
             var handlerType = typeof(TH);
 
             if (!_eventType.Contains(typeof(T)))
@@ -120,7 +120,7 @@ namespace MicroRabbit.Infra.Bus
                     var eventType = _eventType.SingleOrDefault(t => t.Name == eventName);
                     var @event = JsonConvert.DeserializeObject(massage, eventType);
                     var concriteType = typeof(IEventHandler<>).MakeGenericType(eventType);
-                    await (Task)concriteType.GetMethod("Handle").Invoke(handler, new object[] { @event });
+                    await (Task)concriteType.GetMethod("Handler").Invoke(handler, new object[] { @event });
                 }
             }
         }
