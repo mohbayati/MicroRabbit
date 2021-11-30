@@ -6,5 +6,3 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = MicroRabbit.Banking.Domain
-build_property.ProjectDir = C:\Users\mohamad\Desktop\Tech Courses\RabbitMQ\Project\MicroRabbit\MicroRabbit.Banking.Domain\

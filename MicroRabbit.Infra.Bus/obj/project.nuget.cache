@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "9W84bB/ry1FWqhIjW2/+vVT3edfZJHmyJXf6gaNnjpWriarZ/oC8pQHkSsrEQpHai7OOdOEtmvQpzn0F5hY3Ww==",
+  "dgSpecHash": "57WwIXHE66k04i7aVLDsZZyy3wY3/vel1pDFfLktHQiWPZoLoogkpD+Qg24UvlgxlMWjNgZocYcFhv0JuPyLrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mohamad\\Desktop\\Tech Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
+  "projectFilePath": "F:\\Courses\\RabbitMQ\\Project\\MicroRabbit\\MicroRabbit.Infra.Bus\\MicroRabbit.Infra.Bus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mohamad\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\mohamad\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\mohamad\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
-    "C:\\Users\\mohamad\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\mohamad\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\0083855165\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\0083855165\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\0083855165\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\0083855165\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\0083855165\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
