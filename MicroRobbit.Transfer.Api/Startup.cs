@@ -10,6 +10,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
+using MicroRabbit.Infra.IoC;
+using Microsoft.EntityFrameworkCore;
+using MicroRabbit.Transfer.Data.Context;
+using MicroRabbit.Transfer.Domain.Events;
+using MicroRabbit.Transfer.Domain.EventHandlers;
+using MicroRabbit.Domain.Core.Bus;
 
 namespace MicroRobbit.Transfer.Api
 {
@@ -25,14 +32,23 @@ namespace MicroRobbit.Transfer.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            RegisterServices(services);
 
+            services.AddDbContext<TransferDBContext>(option =>
+            {
+                option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+            services.AddMediatR(typeof(Startup));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MicroRobbit.Transfer.Api", Version = "v1" });
             });
         }
-
+        private void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -51,6 +67,13 @@ namespace MicroRobbit.Transfer.Api
             {
                 endpoints.MapControllers();
             });
+            ConfigureEventBus(app);
+
+        }
+        private void ConfigureEventBus(IApplicationBuilder app)
+        {
+            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+            eventBus.Subscribe<TransferCreatedEvent, TransferEventHandler>();
         }
     }
 }

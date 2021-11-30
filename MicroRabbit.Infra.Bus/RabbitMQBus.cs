@@ -78,28 +78,28 @@ namespace MicroRabbit.Infra.Bus
                 HostName = "localhost",
                 DispatchConsumersAsync = true
             };
-            using (var cannection = factory.CreateConnection())
-            using (var channel = cannection.CreateModel())
-            {
-                var eventName = typeof(T).Name;
+            var cannection = factory.CreateConnection();
+            var channel = cannection.CreateModel();
 
-                channel.QueueDeclare(eventName, false, false, false, null);
-                var consumer = new EventingBasicConsumer(channel);
+            var eventName = typeof(T).Name;
+
+            channel.QueueDeclare(eventName, false, false, false, null);
+            var consumer = new AsyncEventingBasicConsumer(channel);
 
 
-                consumer.Received  += Consumer_Received; ;
-                channel.BasicConsume(eventName, true, consumer);
-            }
+            consumer.Received += Consumer_Received; ; ;
+            channel.BasicConsume(eventName, true, consumer);
+
         }
 
-
-        private void Consumer_Received(object sender, BasicDeliverEventArgs e)
+        
+        private async Task Consumer_Received(object sender, BasicDeliverEventArgs @event)
         {
-            var eventName = e.RoutingKey;
-            var massage = Encoding.UTF8.GetString(e.Body.ToArray());
+            var eventName = @event.RoutingKey;
+            var massage = Encoding.UTF8.GetString(@event.Body.ToArray());
             try
             {
-                ProcessEvent(eventName, massage).ConfigureAwait(false);
+               await ProcessEvent(eventName, massage).ConfigureAwait(false);
 
             }
             catch (Exception ex)
@@ -110,7 +110,7 @@ namespace MicroRabbit.Infra.Bus
 
         private async Task ProcessEvent(string eventName, string massage)
         {
-            if(_handlers.ContainsKey(eventName))
+            if (_handlers.ContainsKey(eventName))
             {
                 var subscriptins = _handlers[eventName];
                 foreach (var subscription in subscriptins)

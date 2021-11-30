@@ -1,6 +1,9 @@
 using MediatR;
 using MicroRabbit.Banking.Data.Context;
+using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Infra.IoC;
+using MicroRabbit.Transfer.Domain.EventHandlers;
+using MicroRabbit.Transfer.Domain.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -67,6 +70,10 @@ namespace MicroRabbit.Banking.Api
             {
                 endpoints.MapControllers();
             });
+
+            
         }
+
+        
     }
 }
